@@ -1,0 +1,170 @@
+/* Wedding template scss file */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Niconne|cursive");
+@import "~font-awesome/css/font-awesome.css";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "common";
+// slick-carousel
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.bg-1 {
+  background-image: url("../images/wedding/img1.jpg");
+}
+
+.bg-2 {
+  background-image: url("../images/wedding/img2.jpg");
+}
+
+.bg-3 {
+  background-image: url("../images/wedding/img3.jpg");
+}
+
+.bg-wedding {
+  background-color: #d65779;
+}
+
+.btn-wedding {
+  color: #fff;
+  background-color: $wedding-color;
+  border-color: $wedding-color
+}
+
+.bg-overlay {
+  position: relative;
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.bottom-shadow {
+  box-shadow: 0 0 3px #b5b5b5;
+}
+
+// navbar
+.navbar-wedding {
+  background-color: #fff;
+  padding: 1rem 1rem;
+  transition: all 0.5s ease;
+  .navbar-brand {
+    font-family: "Niconne", cursive;
+    color: $wedding-color;
+    font-size: 2rem;
+    //font-weight: bold;
+  }
+  .navbar-toggler {
+
+  }
+  .active > .nav-link {
+    color: $wedding-color !important;
+  }
+  .nav-link {
+    color: #333 !important;
+  }
+}
+
+// banner
+.banner__slick {
+  font-size: 0;
+  .item {
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1rem;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    .item {
+      height: 100vh;
+    }
+  }
+}
+
+.banner__text {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Niconne", cursive;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    h2 {
+      font-size: 6rem;
+    }
+  }
+}
+
+// about
+
+.about__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > h2 {
+    font-family: "Niconne", cursive;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    > span {
+      color: $wedding-color;
+    }
+  }
+  > p {
+    text-align: center;
+  }
+}
+
+.about__middle__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  > img {
+    border-radius: 50%;
+    max-width: 200px;
+  }
+  > h4 {
+    font-family: "Niconne", cursive;
+    font-size: 2rem;
+  }
+
+  .social-links {
+
+    >a {
+      padding:0.5rem 0.5rem;
+      color:#666;
+    }
+  }
+}
+
+.about__down{
+  background-color: $wedding-color;
+  color:#fff;
+  i.fa{
+    font-size: 2.5rem;
+    color:rgba(255,255,255,0.6);
+    margin-bottom: 2rem;
+  }
+  p{
+    color:rgba(255,255,255,0.6);
+  }
+}
+
+
