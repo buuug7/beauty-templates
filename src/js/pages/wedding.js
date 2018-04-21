@@ -1,11 +1,15 @@
 import '../setup.js';
 
-import '../../scss/wedding.scss';
+import weddingTemplate from '../../html-template/wedding.html'
 
+import '../../scss/wedding.scss';
 
 // import slick-carousel
 import 'slick-carousel';
 
+document.title = 'Wedding';
+
+$('body').prepend($(weddingTemplate));
 
 $(document).ready(function () {
 
@@ -36,5 +40,6 @@ $(document).ready(function () {
     easing:'ease-in'
   });
 
-
 });
+
+

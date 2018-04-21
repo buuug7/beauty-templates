@@ -3,12 +3,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
+let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
 
   entry: {
     index: './src/js/pages/index.js',
-    wedding: './src/js/pages/wedding.js'
+    wedding: './src/js/pages/wedding.js',
   },
 
   output: {
@@ -36,6 +37,7 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 sourceMap: true,
+                minimize: false,
               }
             },
             {
@@ -68,27 +70,36 @@ module.exports = {
             presets: ['@babel/preset-env'],
           }
         }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader',
+        }
       }
     ]
   },
 
   plugins: [
-    new CleanWebpackPlugin(['../dist'],{
-      allowExternal:true,
+    new CleanWebpackPlugin(['../dist'], {
+      allowExternal: true,
     }),
     new HtmlWebpackPlugin({
       title: 'index',
       chunks: ['index', 'vendors'],
       filename: 'index.html',
-      template: './src/html-template/index.html'
+      template: './src/template.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'Wedding',
+      title: 'wedding',
       chunks: ['wedding', 'vendors'],
       filename: 'wedding.html',
-      template: './src/html-template/wedding.html'
+      template: './src/template.html'
     }),
+
     new ExtractTextPlugin('styles.css'),
+
+    new FaviconsWebpackPlugin('./src/favicon.png')
 
   ],
   optimization: {
