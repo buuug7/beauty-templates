@@ -47,6 +47,35 @@ $(document).ready(function () {
     }]
   });
 
+
+  // baner slick
+  $('.posts__slick').slick({
+    slidesToShow: 4,
+    arrows: true,
+    dots: false,
+    //autoplay: true,
+    easing:'ease-in',
+    responsive:[{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+    },{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        infinite: true
+      }
+    },{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        infinite: true
+      }
+    }]
+  });
+
 });
 
 

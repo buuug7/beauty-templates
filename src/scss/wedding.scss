@@ -49,12 +49,12 @@
   box-shadow: 0 0 3px #b5b5b5;
 }
 
-.headline{
+.headline {
   margin-bottom: 3rem;
   font-size: 4rem;
   font-family: $wedding-font-familly-1;
-  >span{
-    color:$wedding-color;
+  > span {
+    color: $wedding-color;
   }
 
 }
@@ -174,7 +174,7 @@
 
 // presentation
 .presentation {
-  padding:6rem 0;
+  padding: 6rem 0;
   background-image: url("../images/wedding/bg/img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,31 +187,30 @@
   }
 }
 
-
 // gallery
-.gallery{
-  padding:6rem 0;
-  .container{
+.gallery {
+  padding: 6rem 0;
+  .container.gallery__top {
     max-width: 1024px;
-    >h2{
+    > h2 {
       font-family: $wedding-font-familly-1;
       font-size: 4rem;
       > span {
-        color:$wedding-color;
+        color: $wedding-color;
       }
     }
   }
 }
 
-.photo{
+.photo {
   position: relative;
-  .photo__text{
+  .photo__text {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
-    height:100%;
-    padding:1rem;
+    height: 100%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,12 +219,143 @@
     background-color: $wedding-color;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
-    &:hover{
-      opacity: 1;
+    &:hover {
+      opacity: 0.9;
     }
   }
-  .photo__names{
+  .photo__names {
     font-family: $wedding-font-familly-1;
   }
 
+}
+
+// services
+
+.services {
+  padding: 6rem 0;
+  background-color: $wedding-color;
+  color: #fff;
+  .container.services__top {
+    max-width: 720px;
+    >p{
+      color:#dedede;
+    }
+  }
+}
+
+.service {
+  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+  > figure {
+    box-shadow: 2px 2px 2px #f4f4f4;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+  .service__text {
+    padding: 1rem;
+    text-align: center;
+    > .server__title {
+      font-family: $wedding-font-familly-1;
+      color: #333;
+      font-size: 2rem;
+    }
+    > p {
+      color: #888;
+    }
+  }
+
+  &:hover {
+    background-color: $wedding-color;
+    > figure {
+      box-shadow: none;
+    }
+    > .service__text {
+      > .server__title {
+        color: #fff;
+      }
+      > p {
+        color: #ddd;
+      }
+    }
+    .btn-wedding{
+      color: $wedding-color;
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
+
+// offers
+.pricing{
+  padding: 6rem 0;;
+  .offers__top{
+    max-width: 1024px;
+  }
+}
+
+.plan-card{
+  background-color: #f5f5f5;
+  transition: all 0.5s ease;
+  .plan-card__header{
+    background-color: $wedding-color;
+    padding:1rem;
+    text-align: center;
+    color:#fff;
+  }
+
+  .plan-card__text{
+    padding:2rem 1rem;
+    text-align: center;
+  }
+  .plan-card__price{
+    color:$wedding-color;
+  }
+  .plan-card__description{
+    color:#333;
+
+  }
+
+  &:hover{
+    transform: translateY(-15px);
+  }
+}
+
+// news
+.news{
+  padding: 6rem 0;
+  background-color: #f9f9f9;
+}
+
+.posts__slick{
+  .slick-prev, .slick-next{
+    background-color: #eee;
+  }
+}
+
+
+.post-card{
+  transition: all 0.5s ease;
+  .post-card__space{
+    margin:0 0.5rem;
+  }
+  .post-card__content{
+    padding:2rem 2rem;
+  }
+  .post-card__title{
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    color:#333;
+  }
+  .post-card__author{
+    >a {
+      color:$wedding-color;
+    }
+  }
+  &:hover{
+    transform: translateY(15px);
+  }
 }
