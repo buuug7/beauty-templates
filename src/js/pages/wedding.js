@@ -33,11 +33,18 @@ $(document).ready(function () {
 
   // baner slick
   $('.banner__slick').slick({
-    slidesToShow: 1,
+    slidesToShow: 2,
     arrows: false,
     dots: false,
     autoplay: true,
-    easing:'ease-in'
+    easing:'ease-in',
+    responsive:[{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        infinite: true
+      }
+    }]
   });
 
 });
