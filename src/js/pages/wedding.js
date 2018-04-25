@@ -51,8 +51,8 @@ $(document).ready(function () {
   // baner slick
   $('.posts__slick').slick({
     slidesToShow: 4,
-    arrows: true,
-    dots: false,
+    arrows: false,
+    dots: true,
     //autoplay: true,
     easing:'ease-in',
     responsive:[{
