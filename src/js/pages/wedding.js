@@ -76,6 +76,26 @@ $(document).ready(function () {
     }]
   });
 
+
+
+  // 高德地图 aMap
+
+  let map = new AMap.Map('baidu-map', {
+    resizeEnable: true,
+    center:[103, 36],
+    zoom:1,
+    pitch:50,
+    viewMode:'3D',
+    features:['point','building','bg'],
+    showBuildingBlock:true,
+    lang:'en'
+  });
+
+  new AMap.Marker({
+    map: map,
+    position: [103, 36],
+  });
+
 });
 
 
