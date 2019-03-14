@@ -47,7 +47,6 @@ $(document).ready(function () {
     }]
   });
 
-
   // baner slick
   $('.posts__slick').slick({
     slidesToShow: 4,
@@ -76,10 +75,7 @@ $(document).ready(function () {
     }]
   });
 
-
-
   // 高德地图 aMap
-
   let map = new AMap.Map('baidu-map', {
     resizeEnable: true,
     center:[103, 36],
