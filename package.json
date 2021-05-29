@@ -4,7 +4,9 @@
   "description": "some template",
   "private": true,
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "build": "sass --no-source-map --style=compressed src"
+  },
   "author": "buuug7 <youpp@126.com>",
   "license": "MIT",
   "dependencies": {

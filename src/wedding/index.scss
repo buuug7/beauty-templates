@@ -2,7 +2,7 @@
 /* Wedding template scss file */
 
 $wedding-color: #d65779;
-$wedding-font-familly-1:"Niconne", cursive;
+$wedding-font-family-1:"Niconne", cursive;
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Niconne|cursive");
 
@@ -50,7 +50,7 @@ $wedding-font-familly-1:"Niconne", cursive;
 .headline {
   margin-bottom: 3rem;
   font-size: 4rem;
-  font-family: $wedding-font-familly-1;
+  font-family: $wedding-font-family-1;
   > span {
     color: $wedding-color;
   }
@@ -61,7 +61,7 @@ $wedding-font-familly-1:"Niconne", cursive;
 }
 
 .wedding-font{
-  font-family: $wedding-font-familly-1;
+  font-family: $wedding-font-family-1;
 }
 
 .wedding-color{
@@ -74,7 +74,7 @@ $wedding-font-familly-1:"Niconne", cursive;
   padding: 1rem 1rem;
   transition: all 0.5s ease;
   .navbar-brand {
-    font-family: $wedding-font-familly-1;
+    font-family: $wedding-font-family-1;
     color: $wedding-color;
     font-size: 2rem;
     //font-weight: bold;
@@ -122,7 +122,7 @@ $wedding-font-familly-1:"Niconne", cursive;
   h2 {
     color: #fff;
     font-size: 2rem;
-    font-family: $wedding-font-familly-1;
+    font-family: $wedding-font-family-1;
   }
 
   @media (min-width: 992px) {
@@ -155,7 +155,7 @@ $wedding-font-familly-1:"Niconne", cursive;
     max-width: 200px;
   }
   > h4 {
-    font-family: $wedding-font-familly-1;
+    font-family: $wedding-font-family-1;
     font-size: 2rem;
   }
 
@@ -202,7 +202,7 @@ $wedding-font-familly-1:"Niconne", cursive;
   .container.gallery__top {
     max-width: 1024px;
     > h2 {
-      font-family: $wedding-font-familly-1;
+      font-family: $wedding-font-family-1;
       font-size: 4rem;
       > span {
         color: $wedding-color;
@@ -233,7 +233,7 @@ $wedding-font-familly-1:"Niconne", cursive;
     }
   }
   .photo__names {
-    font-family: $wedding-font-familly-1;
+    font-family: $wedding-font-family-1;
   }
 
 }
@@ -266,7 +266,7 @@ $wedding-font-familly-1:"Niconne", cursive;
     padding: 1rem;
     text-align: center;
     > .server__title {
-      font-family: $wedding-font-familly-1;
+      font-family: $wedding-font-family-1;
       color: #333;
       font-size: 2rem;
     }
@@ -402,7 +402,7 @@ $wedding-font-familly-1:"Niconne", cursive;
       background-color: rgba(214,87,121,0.8);
       color:#fff;
       >h3{
-        font-family: $wedding-font-familly-1;
+        font-family: $wedding-font-family-1;
       }
     }
   }
