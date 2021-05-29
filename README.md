@@ -1,3 +1,3 @@
-# single page templates
+# some template
 
-based on bootstrap v4
+some template

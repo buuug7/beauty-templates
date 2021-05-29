@@ -1,23 +1,21 @@
+
 /* Wedding template scss file */
+
+$wedding-color: #d65779;
+$wedding-font-familly-1:"Niconne", cursive;
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Niconne|cursive");
-@import "~font-awesome/css/font-awesome.css";
-@import "variables";
-@import "~bootstrap/scss/bootstrap";
-@import "common";
-// slick-carousel
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
 
 .bg-1 {
-  background-image: url("../images/wedding/bg/img1.jpg");
+  background-image: url("./images/bg/img1.jpg");
 }
 
 .bg-2 {
-  background-image: url("../images/wedding/bg/img2.jpg");
+  background-image: url("./images/bg/img2.jpg");
 }
 
 .bg-3 {
-  background-image: url("../images/wedding/bg/img3.jpg");
+  background-image: url("./images/bg/img3.jpg");
 }
 
 .bg-wedding {
@@ -103,7 +101,7 @@
     font-size: 1rem;
   }
 
-  @media (min-width: map_get($grid-breakpoints, lg)) {
+  @media (min-width: 992px) {
     .item {
       height: 100vh;
     }
@@ -127,7 +125,7 @@
     font-family: $wedding-font-familly-1;
   }
 
-  @media (min-width: map_get($grid-breakpoints, lg)) {
+  @media (min-width: 992px) {
     h2 {
       font-size: 6rem;
     }
@@ -186,7 +184,7 @@
 // presentation
 .presentation {
   padding: 6rem 0;
-  background-image: url("../images/wedding/bg/img4.jpg");
+  background-image: url("./images/bg/img4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -372,14 +370,14 @@
 }
 
 .slick-dots{
- bottom:-70px;
+  bottom:-70px;
 }
 
 // contact
 .contact{
   //padding:6rem 0;
   .contact__68{
-    background-image: url("../images/wedding/contacts/bg.jpg");
+    background-image: url("./images/contacts/bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
